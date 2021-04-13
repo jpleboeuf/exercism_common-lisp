@@ -4,5 +4,7 @@
   (:export #:hello))
 (in-package #:hello-world)
 
-(defun hello NIL)
+(defun hello ()
+  "Hello, World!"
+  )
 
