@@ -4,4 +4,7 @@
   (:export #:twofer))
 (in-package #:two-fer)
 
-(defun twofer (name))
+(defun twofer (&optional (name "you"))
+  (let ((name (or name "you")))
+    (format nil "One for ~A, one for me." name))
+  )
